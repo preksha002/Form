@@ -1,0 +1,123 @@
+  
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+ 
+     <style>
+      body {
+        font-family: sans-serif;
+        padding-left: 20%;
+        padding-right: 20%;
+        background-image: url('img1.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+
+      }
+      label {
+        font-size: 20px;
+        display: block;
+        padding-bottom: 0px;
+      }
+      input, textarea, select {
+        display: block;
+        width: 100%;
+        padding-bottom: 15px;
+      }
+
+      form {
+        background-color: #8CFEED;
+        padding: 40px 40px 40px 40px;
+      }
+
+      #button-area {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+      
+      input[type=checkbox]:not(old) + label,
+      input[type=radio   ]:not(old) + label {
+        display      : inline-block;
+        margin-left  : -28px;
+        padding-left : 28px;
+        padding-bottom: 25px;
+
+       
+      }
+      button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 16px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: -4px;
+}
+
+button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+    </style>
+  </head>
+
+  <body>
+    <h1 id="title" style="color:#ffffff;">Tell Me About Music</h1>
+    <p id="description" style="color: #ffffff;">
+      This is a survey where you can tell us about the music you're inspired by.
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="Full Name"><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Email"><br>
+
+      <label id="number-label">Number:</label>
+      <input type="number" name="number" id="number" min="0" max="10" required placeholder="Mobile Number"><br>
+
+
+      <label id="guitar-type-label">Guitar Type:</label>
+      <select id="dropdown" name="guitars">
+        <option value="fender">Fender</option>
+        <option value="martin">Martin</option>
+        <option value="epiphone">Epiphone</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label id="additional-comments-label">Additional Comments:</label>
+      <textarea placeholder="Additional Comments you like to give"></textarea><br>
+
+      <div id="button-area">
+        <label id="gender-label">Gender:</label>
+        <input type="radio" class="radio-inline" name="gender" value="male"> Male<br>
+        <input type="radio" class="radio-inline" name="gender" value="female"> Female<br>
+        <input type="radio" class="radio-inline" name="gender" value="other"> Other
+      </div>
+      <div id="button-area">
+        <label id="transportation-type-label">Transportation Type:</label>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car<br>
+        <input type="checkbox" name="vehicle3" value="Boat" checked> I have a boat<br>
+      </div>
+
+      
+        <button>Submit</button>
+    
+    </form>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
